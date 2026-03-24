@@ -1,0 +1,29 @@
+{
+  "name": "hylivbot",
+  "version": "0.1.0",
+  "description": "Autonomous Polymarket prediction market trading bot",
+  "main": "dist/index.js",
+  "bin": {
+    "hylivbot": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.36.0",
+    "@polymarket/clob-client": "^4.2.0",
+    "chalk": "^4.1.2",
+    "cli-table3": "^0.6.5",
+    "dotenv": "^16.4.5",
+    "ethers": "^5.7.2",
+    "openai": "^4.77.0",
+    "ora": "^5.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
